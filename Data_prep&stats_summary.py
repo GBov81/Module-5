@@ -26,9 +26,9 @@ summary_stats_df = cleaned_df.groupby('Drug Regimen')['Tumor Volume (mm3)'].agg(
 summary_stats_df = summary_stats_df.rename(columns={
     'mean': 'Mean Tumor Volume',
     'median': 'Median Tumor Volume',
-    'var': 'Variance of Tumor Volume',
-    'std': 'Standard Deviation of Tumor Volume',
-    'sem': 'SEM of Tumor Volume'
+    'var': 'Tumor Volume Variance',
+    'std': 'Tumor Volume SD',
+    'sem': 'Tumor Volume SEM'
 })
 # Display the summary statistics DataFrame.
 print("Summary Statistics:")
